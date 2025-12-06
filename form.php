@@ -190,47 +190,7 @@ include("data.php");
             text-shadow: 0 0 10px black;
         }
 
-        .success-msg {
-            margin-top: 20px;
-            padding: 15px;
-            background: rgba(0, 255, 100, 0.25);
-            border-left: 5px solid #00ff88;
-            color: #00ffcc;
-            font-size: 20px;
-            font-family: Poppins, sans-serif;
-            border-radius: 10px;
-            text-shadow: 0 0 5px black;
-            box-shadow: 0 0 10px #00ffaa77;
-            text-align: center;
-            animation: fadeIn 0.8s ease;
-        }
-
-        .error-msg {
-            margin-top: 20px;
-            padding: 15px;
-            background: rgba(255, 0, 0, 0.25);
-            border-left: 5px solid #ff4444;
-            color: #ffaaaa;
-            font-size: 20px;
-            font-family: Poppins, sans-serif;
-            border-radius: 10px;
-            text-shadow: 0 0 5px black;
-            box-shadow: 0 0 10px #ff000066;
-            text-align: center;
-            animation: fadeIn 0.8s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-5px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+       
     </style>
 </head>
 
@@ -324,4 +284,5 @@ if (isset($sql)) {
         echo '❌ Error: ' . mysqli_error($connect);
     }
 }
+
 ?>
